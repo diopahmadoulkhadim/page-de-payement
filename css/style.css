@@ -21,6 +21,12 @@ h1,h2,h3,p{margin-top:0}
 h1{font-family:Manrope,sans-serif;font-size:clamp(38px,4.3vw,59px);line-height:1.08;letter-spacing:-2.7px;margin:24px 0 22px;font-weight:800}
 h1 span{color:#6b9f23}
 .intro>p{font-size:16px;line-height:1.8;color:var(--muted);max-width:450px}
+.event-details{display:grid;gap:12px;margin:25px 0 0;padding:17px 18px;border:1px solid #e2e9dc;border-radius:16px;background:rgba(255,255,255,.72);max-width:450px}
+.event-details>div{display:flex;align-items:center;gap:12px}
+.event-details>div>i{width:34px;height:34px;display:grid;place-items:center;flex-shrink:0;border-radius:11px;background:#e6f4d6;color:#4e8116;font-size:16px}
+.event-details strong,.event-details small{display:block}
+.event-details strong{font-size:11px;margin-bottom:2px}
+.event-details small{font-size:12px;color:var(--muted)}
 .benefits{display:grid;gap:22px;margin-top:40px}
 .benefits>div{display:flex;align-items:center;gap:14px}
 .benefit-icon{width:47px;height:47px;display:grid;place-items:center;flex-shrink:0;border-radius:15px;background:#e6f4d6;color:#4e8116;font-size:20px}
