@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101b17" />
+    <meta
+      name="description"
+      content="Inscription KEB'S SPORT et paiement par Wave."
+    />
+    <title>Inscription | KEB'S SPORT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="KEB'S SPORT - accueil">
+        <img
+          src="https://raw.githubusercontent.com/diopahmadoulkhadim/keb-sport/main/images/logo.png"
+          alt="Logo KEB'S SPORT"
+          onerror="
+            this.style.display = 'none';
+            this.nextElementSibling.style.display = 'block';
+          "
+        />
+        <span class="brand-fallback">KEB'S <b>SPORT</b></span>
+      </a>
+      <div class="secure-note">
+        <i class="bi bi-shield-check"></i><span>Inscription sécurisée</span>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="intro">
+        <span class="eyebrow"
+          ><span class="eyebrow-dot"></span> REJOIGNEZ LE CLUB</span
+        >
+        <h1>Votre prochaine<br /><span>version commence ici.</span></h1>
+        <p>
+          Complétez le formulaire, effectuez votre paiement par Wave, puis
+          envoyez votre demande à l'équipe KEB'S SPORT.
+        </p>
+        <div class="benefits">
+          <div>
+            <span class="benefit-icon"
+              ><i class="bi bi-lightning-charge"></i></span
+            ><span
+              ><strong>Inscription simple</strong
+              ><small>Quelques informations suffisent</small></span
+            >
+          </div>
+          <div>
+            <span class="benefit-icon"><i class="bi bi-wallet2"></i></span
+            ><span
+              ><strong>Paiement par Wave</strong
+              ><small>Transfert au numéro du club</small></span
+            >
+          </div>
+          <div>
+            <span class="benefit-icon"><i class="bi bi-whatsapp"></i></span
+            ><span
+              ><strong>Confirmation directe</strong
+              ><small>Envoyez votre demande au club</small></span
+            >
+          </div>
+        </div>
+        <div class="decor decor-one"></div>
+        <div class="decor decor-two"></div>
+      </section>
+
+      <section class="registration-card" aria-labelledby="form-title">
+        <div class="card-heading">
+          <div>
+            <span class="step-label">ÉTAPE 01 — VOS INFORMATIONS</span>
+            <h2 id="form-title">Formulaire d'inscription</h2>
+            <p>Les champs marqués d'un * sont obligatoires.</p>
+          </div>
+          <div class="heading-icon"><i class="bi bi-person-check"></i></div>
+        </div>
+
+        <form id="registrationForm">
+          <div class="field-grid">
+            <div class="field">
+              <label for="prenom">Prénom <span>*</span></label>
+              <div class="input-wrap">
+                <i class="bi bi-person"></i
+                ><input
+                  id="prenom"
+                  name="prenom"
+                  type="text"
+                  autocomplete="given-name"
+                  placeholder="Votre prénom"
+                  required
+                  minlength="2"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="nom">Nom <span>*</span></label>
+              <div class="input-wrap">
+                <i class="bi bi-person"></i
+                ><input
+                  id="nom"
+                  name="nom"
+                  type="text"
+                  autocomplete="family-name"
+                  placeholder="Votre nom"
+                  required
+                  minlength="2"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="telephone">Numéro de téléphone <span>*</span></label>
+              <div class="input-wrap">
+                <i class="bi bi-telephone"></i
+                ><input
+                  id="telephone"
+                  name="telephone"
+                  type="tel"
+                  autocomplete="tel"
+                  placeholder="Ex. 77 123 45 67"
+                  required
+                  pattern="[0-9+().\s-]{8,20}"
+                />
+              </div>
+              <small>Un numéro joignable au Sénégal ou à l'étranger.</small>
+            </div>
+            <div class="field">
+              <label for="email">Adresse e-mail <span>*</span></label>
+              <div class="input-wrap">
+                <i class="bi bi-envelope"></i
+                ><input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="vous@exemple.com"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="divider"><span>ÉTAPE 02 — PAIEMENT</span></div>
+          <div class="payment-panel payment-panel-wave">
+            <div class="payment-copy">
+              <span class="payment-pill"
+                ><i class="bi bi-phone"></i> Paiement mobile</span
+              >
+              <h3>Payez avec Wave</h3>
+              <p>Montant à payer : <strong>2 000 FCFA</strong></p>
+              <p>Effectuez le transfert vers le numéro Wave du club :</p>
+              <div class="wave-payment">
+                <strong id="waveNumber">+221 78 534 82 82</strong>
+                <button class="wave-copy-btn" id="copyWaveNumber" type="button">
+                  <i class="bi bi-copy"></i><span>Copier le numéro Wave</span>
+                </button>
+                <small id="waveFeedback" role="status" aria-live="polite"
+                  >Ouvrez Wave, saisissez ce numéro et vérifiez le bénéficiaire
+                  avant d'envoyer.</small
+                >
+              </div>
+              <ol>
+                <li>Copiez le numéro et saisissez-le dans Wave.</li>
+                <li>
+                  Vérifiez le bénéficiaire et le montant de 2 000 FCFA avant de
+                  confirmer.
+                </li>
+                <li>Revenez ici et envoyez votre demande d'inscription.</li>
+              </ol>
+            </div>
+          </div>
+          <label class="checkline"
+            ><input type="checkbox" id="paymentDone" required /><span
+              >Je confirme avoir effectué le paiement ou je souhaite transmettre
+              ma demande pour vérification par le club. <b>*</b></span
+            ></label
+          >
+          <button class="submit-btn" type="submit">
+            <span>Envoyer mon inscription</span
+            ><i class="bi bi-arrow-up-right"></i>
+          </button>
+          <p class="form-footnote">
+            <i class="bi bi-lock"></i> Vos informations seront préparées dans
+            WhatsApp pour l'équipe du club. Cette page ne stocke pas vos données
+            sur un serveur.
+          </p>
+          <div
+            class="form-feedback"
+            id="formFeedback"
+            role="status"
+            aria-live="polite"
+          ></div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> KEB'S SPORT</span
+      ><span>Discipline · Énergie · Progression</span>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
