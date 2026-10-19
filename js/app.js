@@ -27,17 +27,18 @@ form.addEventListener("submit", function (event) {
   const telephone = String(data.get("telephone")).trim();
   const email = String(data.get("email")).trim();
 
-  // Numéro de contact KEB'S SPORT communiqué pour ce projet (format international).
   const message = [
-    "Bonjour KEB'S SPORT, je souhaite transmettre une demande d'inscription.",
+    "Bonjour KEB'S SPORT, je souhaite m'inscrire à une séance d'aquagym.",
     "",
     `Prénom : ${prenom}`,
     `Nom : ${nom}`,
     `Téléphone : ${telephone}`,
     `E-mail : ${email}`,
     "",
+    "Séance : aquagym",
+    "Participation : 2 000 FCFA",
     "Statut du paiement : à vérifier par le club.",
-    "Merci de me confirmer la réception de ma demande."
+    "Merci de me confirmer la réception de mon inscription à la séance."
   ].join("\n");
 
   feedback.className = "form-feedback show";
