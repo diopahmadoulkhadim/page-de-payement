@@ -28,7 +28,7 @@ form.addEventListener("submit", function (event) {
   const email = String(data.get("email")).trim();
 
   const message = [
-    "Bonjour KEB'S SPORT, je souhaite m'inscrire à une séance d'aquagym.",
+    "Bonjour KEB'SPORT, je souhaite m'inscrire à une séance d'aquagym.",
     "",
     `Prénom : ${prenom}`,
     `Nom : ${nom}`,

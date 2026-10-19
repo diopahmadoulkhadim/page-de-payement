@@ -1,4 +1,4 @@
-KEB'S SPORT — INSCRIPTION À LA SÉANCE D'AQUAGYM
+KEB'SPORT — INSCRIPTION À LA SÉANCE D'AQUAGYM
 ==============================================
 
 Fichiers :
